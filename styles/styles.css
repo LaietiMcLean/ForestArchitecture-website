@@ -76,3 +76,137 @@ img {
 .mt-5 {
     margin-top: 5rem;
 }
+
+/*Header styles*/
+
+.header {
+    min-height: 60rem;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+    color: var(--white);
+}
+.company-name {
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    .company-name {
+        font-size: 5rem;
+    }
+}
+
+.company-name span {
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .title-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (min-width: 768px) {
+      .contact {
+        align-items: flex-end;
+      }
+}
+
+.phone {
+    display: flex;
+}
+
+.phone::before {
+    content: '';
+    display: block;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 4rem;
+    height: 4rem;
+}
+
+.header a {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .header a {
+        font-size: 1.5rem;
+    }   
+}
+    
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-bar a {
+    padding: .5rem;
+    transition: background-color 300ms;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .nav-bar {
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+    .nav-bar a {
+        padding: 1rem 2rem;
+        width: fit-content;
+    }
+}
+
+.nav-bar a:hover {
+    background-color: rgb(255 255 255 / .5);
+    color: var(--black)
+}
+
+.subtitle-text {
+    text-align: center;
+}
+
+.subtitle-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.subtitle-text p {
+    margin: 0;
+    line-height: 1;
+}
+
+
+@media (min-width: 768px) {
+   .subtitle-text {
+    text-align: right;
+   }
+   .subtitle-text h1 {
+        font-size: 5rem;
+   }   
+}   
