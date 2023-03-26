@@ -360,3 +360,35 @@ img {
     } 
 }
 
+/*Footer - Section*/
+
+.footer {
+    height: 50rem;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: var(--white)
+}
+
+.footer a {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer a {
+        font-size: 1.5rem;
+    }   
+}
+
+.copyright {
+    background-color: var(--black);
+    text-align: center;
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+    padding: 1rem;
+}
